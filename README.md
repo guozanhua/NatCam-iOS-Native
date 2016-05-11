@@ -9,4 +9,9 @@ Since this is a very expensive operation because of the sheer amount of data we 
 
   Y = (R << 1 + R + G << 2 + B) >> 3
 
-Where R, B, G, Y are in [0, 1] range.
+Where R, B, G, Y are in [0, 1] range. Once this has been calculated, we fill an output buffer with the Y values and create a texture with this data. To do this, we use Texture2D.LoadRawTextureData(IntPtr, int).
+
+Note that this several optimizations exist for our targeted platform (iOS):
+- ARM NEON
+- ARM Assembly
+- GPU Acceleration
