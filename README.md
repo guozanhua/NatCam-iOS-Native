@@ -8,3 +8,5 @@ In this example, the camera preview data is sent to the native layer to convert 
 Since this is a very expensive operation because of the sheer amount of data we must process (width * height iterations), we can approximate this for better performance by performing a bit shift:
 
   Y = (R << 1 + R + G << 2 + B) >> 3
+
+Where R, B, G, Y are in [0, 1] range.
