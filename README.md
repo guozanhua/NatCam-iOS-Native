@@ -12,6 +12,6 @@ To do this, we use the OnNativePreviewUpdate event in NatCamNativeInterface. In 
 - Import NatCam into the project
 - Build and Run!
 
-# NOTE
-- This demo is only compatible on iOS. For Android, you must manually compile the native sources with the Android NDK.
+# Note
+- This demo works only on iOS. For Android, you must manually compile the native sources with the Android NDK.
 - This demo requires Unity 5.3.
