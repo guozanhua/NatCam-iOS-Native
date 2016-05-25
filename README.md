@@ -14,4 +14,4 @@ To do this, we use the OnNativePreviewUpdate event in NatCamNativeInterface. In 
 
 # Note
 - This demo works only on iOS. For Android, you must manually compile the native sources with the Android NDK.
-- This demo requires Unity 5.3.
+- This demo requires Unity 5.3 and up.
