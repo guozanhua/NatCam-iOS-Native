@@ -11,7 +11,7 @@ void Convert (void** rgbBuffer, const void* yBuffer, const size_t size) {
     //Null checking
     if (rgb24 == NULL) rgb24 = new byte[size * 3]; //We multiply size by 3 because this is 3-channel RGB24
     //Iterate
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++) { //Performing a C-style cast is bad practice, use reinterpret_cast<byte*> instead >:(
         //Set the R channel
         rgb24[i * 3] = ((byte*)yBuffer)[i];
         //Set the G channel
