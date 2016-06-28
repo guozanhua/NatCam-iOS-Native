@@ -50,7 +50,7 @@ public class Y2Greyscale : UnitygramBase {
 	
 	
 	#region --Native Ops--
-	#if UNITY_IOS && !UNITIY_EDITOR
+	#if UNITY_IOS && !UNITY_EDITOR
 	[DllImport("__Internal")]
 	private static extern void Convert (out IntPtr rgbBuffer, IntPtr buffer, UIntPtr size);
 	#else
