@@ -1,4 +1,4 @@
-# Native-Code-NatCam
+# NatCam-iOS-Native
 A demonstration of using native code (C++) with the NatCam Native Pipeline. Powered by NatCam v1.2.
 
 In this example, the camera preview data is sent to the native layer to convert Y data (lumincance) to greyscale. Since the Y channel already contains luminance data, all we have to do is fill an RGB24 texture with the data like so:
